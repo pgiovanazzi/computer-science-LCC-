@@ -1,0 +1,18 @@
+
+//El tipo de la funcion qsort del c:
+void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*));
+
+//El tipo de la funcion qsort por el eje1:
+void qsort(int data[], int init, int last);
+
+/*
+  El qsort implementado en c tiene 4 parametros los cuales representan respectivamente
+  base un puntero al primer elemento del arreglo
+  nitems es el numero de elementos que apunta el arreglo base
+  size es el tamoño de bytes de cada elemento del arreglo (si es entero sizeof(int))
+  compar es un puntero a una funcion de comparacion
+
+  La diferencia que exite con respecto a la generalidad es que qsort tiene un parametros
+  adicional, la cual reprecenta el tamaño de cada elemento del arreglo. Con este
+  parametro se podria manipular cualquier tipo de arreglo.
+*/

@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"glist.h": "c",
+		"string2.h": "c",
+		"stdio2.h": "c",
+		"getopt.h": "c"
+	}
+}
