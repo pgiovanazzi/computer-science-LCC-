@@ -5,7 +5,7 @@ Este repositorio contiene materiales y ejemplos de código para el curso de Estr
 ## Temas del Curso
 
 ### 1. Introducción
-- **Archivo**: [intro.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/intro.pdf)
+- **Archivo**: [intro.pdf](EDyA/2014-2015/Teoria/intro.pdf)
 - **Descripción**: Introducción a los conceptos básicos de estructuras de datos y algoritmos.
 
 ### 2. Listas
