@@ -1,4 +1,4 @@
-# Estructura de Datos y Algoritmos - Ciencias de la Computación
+# Estructura de Datos y Algoritmos - Lic. Ciencias de la Computación de la UNR
 
 Este repositorio contiene materiales y ejemplos de código para el curso de Estructura de Datos y Algoritmos de la carrera de Ciencias de la Computación. A continuación se describen las clases y prácticas incluidas en el programa.
 
