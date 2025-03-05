@@ -1,0 +1,230 @@
+Estadísticos y gráficos con el lenguaje R via internet
+
+Pagina web a la que debéis entrar:
+http://bayes.math.montana.edu/Rweb/Rweb.general.html
+
+(Aparente) Desventaja: Basado en comandos...hay que saberlos...
+Ventaja: La enorme versatilidad. Es gratuito. Es de código libre.
+
+Hay una versión gratuita (y de código libre) de R
+tanto para Windows, como para Mac, como para Linux,
+que podéis descargar de internet.
+
+Hay, además, un buen número de tutoriales en internet.
+
+1. PASO PRELIMINAR
+
+Para definir un vector con numeros desde el teclado:
+
+Pensemos que tenemos el TR (en seg) de una muestra de 15 individuos:
+(vamos a llamar tr al vector)
+
+tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
+
+la "c" es de concatenar, y entre paréntesis se introducen los números)
+
+Alternativamente, caso de tener muchos datos, se puede importar una
+tabla de datos con el comando "read.table",
+tal como se indica en la página web.
+
+2. ESTADÍSTICOS DESCRIPTIVOS
+
+Y ahora vamos a pedir el tamaño muestral
+length(tr)
+ 
+La media
+mean(tr)
+
+La mediana
+median(tr)
+
+La (cuasi)desviación típica
+sd(tr)
+
+el rango intercuartil (el doble de Q, dado que no está dividido por 2)
+IQR(tr)
+
+la MEDA (mediana de las dif absolutas respecto la Md)
+Nota: este índice se halla multiplicado por 1.4826
+para hacerla comparable con la desv.típica de una distribución normal
+mad(tr)
+
+los percentiles 25, 50 y 75
+quantile(tr,.25)
+quantile(tr,.50)
+quantile(tr,.75)
+
+la media recortada al 10%
+mean(tr,trim=10/100)
+
+la media recortada al 5%
+mean(tr,trim=5/100)
+
+la asimetría (momento de 3er orden)
+
+Aquí hay que crear la función:
+
+skewness=function(x) {
+m3=mean((x-mean(x))^3)
+skew=m3/(sd(x)^3)
+skew}
+
+y pedirla:
+
+skewness(tr)
+
+O crear el coef.asimetría basado en cuartiles
+
+skew2=function(x) {
+num=(p75-p50)-(p50-p25)
+den=p75-p25
+skewinter=num/den
+skewintwer}
+
+y pedirlo:
+
+skew2(tr)
+
+la curtosis (momento de 4o orden)
+
+Aquí también hay que crear la función
+kurtosis=function(x) {
+m4=mean((x-mean(x))^4)
+kurt=m4/(sd(x)^4)-3 
+kurt}
+
+y pedirla:
+
+kurtosis(tr)
+
+Podemos pedir "el resumen de 5 números"
+que contiene la punt.menor, el cuarto inferior (aprox P25), la mediana,
+el cuarto superior (aprox P75) y la punt.mayor
+
+fivenum(tr)
+
+Podemos pedir el "resumen" que da los cuartiles
+
+summary(tr)
+que nos da el mínimo, el máximo, los 3 cuartiles (P25, P50 y P75) y la media.
+
+3. GRÁFICOS
+
+Podemos tener el diagrama de tallo y hojas:
+
+stem(tr)
+
+Podemos tener el diagrama de caja y bigotes:
+
+boxplot(tr)
+
+También podemos tener el histrograma
+
+hist(tr)
+
+Hace también otros tipos de gráficos (v.g., gráficos de sectores).
+
+En resumen, podéis copiar y pegar los comandos de abajo...
+
+***************************
+tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
+length(tr)
+mean(tr)
+median(tr)
+sd(tr)
+IQR(tr)
+mad(tr)
+fivenum(tr)
+summary(tr)
+p25=quantile(tr,.25)
+p25
+p50=quantile(tr,.50)
+p50
+p75=quantile(tr,.75)
+p75
+mean(tr,trim=10/100)
+kurtosis=function(x) {
+m4=mean((x-mean(x))^4)
+kurt=m4/(sd(x)^4)-3 
+kurt}
+kurtosis(tr)
+skewness=function(x) {
+m3=mean((x-mean(x))^3)
+skew=m3/(sd(x)^3)
+skew}
+skewness(tr)
+skew2=function(x) {
+num=(p75-p50)-(p50-p25)
+den=p75-p25
+skewinter=num/den
+skewinter}
+skew2(tr)
+stem(tr)
+boxplot(tr)
+hist(tr)
+
+*****************************
+
+Podéis ver la salida ("output") del programa seguidamente...
+
+Rweb:> tr=c(3,4,5,3,4,5,4,3,2,3,12,11,3,4,89)
+Rweb:> length(tr)
+[1] 15
+Rweb:> mean(tr)
+[1] 10.33333
+Rweb:> median(tr)
+[1] 4
+Rweb:> sd(tr)
+[1] 21.95341
+Rweb:> IQR(tr)
+[1] 2
+Rweb:> mad(tr)
+[1] 1.4826
+Rweb:> fivenum(tr)
+[1]  2  3  4  5 89
+Rweb:> summary(tr)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   2.00    3.00    4.00   10.33    5.00   89.00 
+Rweb:> p25=quantile(tr,.25)
+Rweb:> p25
+25% 
+  3 
+Rweb:> p50=quantile(tr,.50)
+Rweb:> p50
+50% 
+  4 
+Rweb:> p75=quantile(tr,.75)
+Rweb:> p75
+75% 
+  5 
+Rweb:> mean(tr,trim=10/100)
+[1] 4.923077
+Rweb:> kurtosis=function(x) {
++ m4=mean((x-mean(x))^4) 
++ kurt=m4/(sd(x)^4)-3  
++ kurt}
+Rweb:> kurtosis(tr)
+[1] 7.999513
+Rweb:> skewness=function(x) {
++ m3=mean((x-mean(x))^3)
++ skew=m3/(sd(x)^3)
++ skew}
+Rweb:> skewness(tr)
+[1] 3.043077
+Rweb:> skew2=function(x) {
++ num=(p75-p50)-(p50-p25)
++ den=p75-p25
++ skewinter=num/den
++ skewinter}
+Rweb:> skew2(tr)
+75% 
+  0 
+Rweb:> stem(tr)
+ 
+  The decimal point is 1 digit(s) to the right of the |
+ 
+  0 | 23333344445512
+  2 | 
+  4 | 
+  6 | 
+  8 | 9 
