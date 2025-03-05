@@ -5,31 +5,31 @@ Este repositorio contiene materiales y ejemplos de código para el curso de Estr
 ## Temas del Curso
 
 ### 1. Introducción
-- **Archivo**: [intro.pdf](EDyA/2014-2015/Teoria/00.intro.pdf)
+- **Archivo**: [intro.pdf](EDyA/2014-2015/Teoria/intro.pdf)
 - **Descripción**: Introducción a los conceptos básicos de estructuras de datos y algoritmos.
 
 ### 2. Listas
-- **Archivo**: [listas.pdf](EDyA/2014-2015/Teoria/01.listas.pdf)
+- **Archivo**: [listas.pdf](EDyA/2014-2015/Teoria/listas.pdf)
 - **Descripción**: Estudio de las listas enlazadas y sus aplicaciones.
 
 ### 3. Pilas
-- **Archivo**: [pilas.pdf](EDyA/2014-2015/Teoria/02.pilas.pdf)
+- **Archivo**: [pilas.pdf](EDyA/2014-2015/Teoria/pilas.pdf)
 - **Descripción**: Implementación y uso de pilas (stacks) en diferentes algoritmos.
 
 ### 4. Punteros
-- **Archivo**: [punteros.pdf](EDyA/2014-2015/Teoria/03.punteros.pdf)
+- **Archivo**: [punteros.pdf](EDyA/2014-2015/Teoria/punteros.pdf)
 - **Descripción**: Uso de punteros en C para manejar memoria dinámica.
 
 ### 5. Árboles
-- **Archivo**: [arboles.pdf](EDyA/2014-2015/Teoria/04.arboles.pdf)
+- **Archivo**: [arboles.pdf](EDyA/2014-2015/Teoria/arboles.pdf)
 - **Descripción**: Estructuras de datos basadas en árboles, incluyendo árboles binarios y árboles de búsqueda.
 
 ### 6. Tablas Hash
-- **Archivo**: [hashtables.pdf](EDyA/2014-2015/Teoria/05.hashtables.pdf)
+- **Archivo**: [hashtables.pdf](EDyA/2014-2015/Teoria/hashtables.pdf)
 - **Descripción**: Implementación y uso de tablas hash para almacenamiento eficiente de datos.
 
 ### 7. Montículos (Heaps)
-- **Archivo**: [heaps.pdf](EDyA/2014-2015/Teoria/06.heaps.pdf)
+- **Archivo**: [heaps.pdf](EDyA/2014-2015/Teoria/heaps.pdf)
 - **Descripción**: Estructuras de datos tipo montículo y sus aplicaciones en algoritmos de ordenamiento.
 
 ### 8. Ordenamiento
@@ -48,19 +48,19 @@ Este repositorio contiene materiales y ejemplos de código para el curso de Estr
 - **Archivo**: [11.estrategias.pdf](EDyA/2014-2015/Teoria/11.estrategias.pdf)
 - **Descripción**: Diferentes estrategias para el diseño y optimización de algoritmos.
 
-### 12. Divide y Vencerás
+### 11. a. Divide y Vencerás
 - **Archivo**: [divandcon.c](EDyA/2014-2015/Teoria/divandcon.c)
 - **Descripción**: Implementación de algoritmos que utilizan la técnica de divide y vencerás.
 
-### 13. Programación Dinámica
+### 11. b. Programación Dinámica
 - **Archivo**: [dyn.c](EDyA/2014-2015/Teoria/dyn.c)
 - **Descripción**: Ejemplos de algoritmos que utilizan programación dinámica para optimizar soluciones.
 
-### 14. Algoritmos Voraces (Greedy)
+### 11. c. Algoritmos Voraces (Greedy)
 - **Archivo**: [greedy.c](EDyA/2014-2015/Teoria/greedy.c)
 - **Descripción**: Implementación de algoritmos voraces para resolver problemas de optimización.
 
-### 15. Backtracking
+### 11. d. Backtracking
 - **Archivo**: [backtracking.c](EDyA/2014-2015/Teoria/backtracking.c)
 - **Descripción**: Uso de la técnica de backtracking para resolver problemas de búsqueda y optimización.
 
