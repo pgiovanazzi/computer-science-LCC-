@@ -5,31 +5,31 @@ Este repositorio contiene materiales y ejemplos de código para el curso de Estr
 ## Temas del Curso
 
 ### 1. Introducción
-- **Archivo**: [intro.pdf](EDyA/2014-2015/Teoria/intro.pdf)
+- **Archivo**: [intro.pdf](EDyA/2014-2015/Teoria/00intro.pdf)
 - **Descripción**: Introducción a los conceptos básicos de estructuras de datos y algoritmos.
 
 ### 2. Listas
-- **Archivo**: [listas.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/listas.pdf)
+- **Archivo**: [listas.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/01.listas.pdf)
 - **Descripción**: Estudio de las listas enlazadas y sus aplicaciones.
 
 ### 3. Pilas
-- **Archivo**: [pilas.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/pilas.pdf)
+- **Archivo**: [pilas.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/02.pilas.pdf)
 - **Descripción**: Implementación y uso de pilas (stacks) en diferentes algoritmos.
 
 ### 4. Punteros
-- **Archivo**: [punteros.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/punteros.pdf)
+- **Archivo**: [punteros.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/03.punteros.pdf)
 - **Descripción**: Uso de punteros en C para manejar memoria dinámica.
 
 ### 5. Árboles
-- **Archivo**: [arboles.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/arboles.pdf)
+- **Archivo**: [arboles.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/04.arboles.pdf)
 - **Descripción**: Estructuras de datos basadas en árboles, incluyendo árboles binarios y árboles de búsqueda.
 
 ### 6. Tablas Hash
-- **Archivo**: [hashtables.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/hashtables.pdf)
+- **Archivo**: [hashtables.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/05.hashtables.pdf)
 - **Descripción**: Implementación y uso de tablas hash para almacenamiento eficiente de datos.
 
 ### 7. Montículos (Heaps)
-- **Archivo**: [heaps.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/heaps.pdf)
+- **Archivo**: [heaps.pdf](computer-science-LCC-/EDyA/2014-2015/Teoria/06.heaps.pdf)
 - **Descripción**: Estructuras de datos tipo montículo y sus aplicaciones en algoritmos de ordenamiento.
 
 ### 8. Ordenamiento
